@@ -38,6 +38,7 @@
 #include "InstrumentTrack.h"
 #include "VstPlugin.h"
 #include "MainWindow.h"
+#include "Mixer.h"
 #include "GuiApplication.h"
 #include "PixmapButton.h"
 #include "StringPairDrag.h"
@@ -643,7 +644,7 @@ void VestigeInstrumentView::openPlugin()
 		{
 			return;
 		}
-		Engine::mixer()->lock();
+		Engine::mixer()->requestChangeInModel();
 
 		if (m_vi->p_subWindow != NULL) {
 			delete m_vi->p_subWindow;
@@ -651,7 +652,7 @@ void VestigeInstrumentView::openPlugin()
 		}
 
 		m_vi->loadFile( ofd.selectedFiles()[0] );
-		Engine::mixer()->unlock();
+		Engine::mixer()->doneChangeInModel();
 		if( m_vi->m_plugin && m_vi->m_plugin->pluginWidget() )
 		{
 			m_vi->m_plugin->pluginWidget()->setWindowIcon(

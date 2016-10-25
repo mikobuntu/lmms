@@ -1,10 +1,10 @@
 /*
- * unrtf.cpp - integration of UnRTF
+ * RowTableView.h - table with rows that act like single cells
  *
- * Copyright (c) 2008 Tobias Doerffel <tobydox/at/users.sourceforge.net>
+ * Copyright (c) 2016 Javier Serrano Polo <javier@jasp.net>
  *
  * This file is part of LMMS - http://lmms.io
- * 
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
  * License as published by the Free Software Foundation; either
@@ -22,50 +22,34 @@
  *
  */
 
+#ifndef ROW_TABLE_VIEW_H
+#define ROW_TABLE_VIEW_H
 
-#include "lmmsconfig.h"
+#include <QTableView>
 
-#include <QString>
-#include <QBuffer>
 
-#include <cstdio>
+class RowDelegate;
 
-extern "C"
+
+class RowTableView : public QTableView
 {
+	Q_OBJECT
+public:
+	RowTableView( QWidget * parent = 0 );
+	virtual ~RowTableView();
 
-// unrtf-stuff
-#include "defs.h"
-#include "main.h"
-#include "html.h"
-#include "word.h"
-#include "hash.h"
-#include "convert.h"
-#include "attr.h"
+	virtual void setModel( QAbstractItemModel * model );
 
 
-int lineno = 0;
-#define inline_mode 0
-#define debug_mode 0
-#define nopict_mode 1
-#define verbose_mode 0
-#define simple_mode 0
-#define no_remap_mode 0
-
-QString outstring;
-short numchar_table;
-OutputPersonality * op = NULL;
+protected:
+	virtual void keyPressEvent( QKeyEvent * event );
 
 
-// include unrtf-source
-#include "attr.c"
-#include "convert.c"
-#include "error.c"
-#include "hash.c"
-#include "html.c"
-#include "ur_malloc.c"
-#include "output.c"
-#include "parse.c"
-#include "util.c"
-#include "word.c"
+private:
+	RowDelegate * m_rowDelegate;
 
-}
+} ;
+
+
+
+#endif

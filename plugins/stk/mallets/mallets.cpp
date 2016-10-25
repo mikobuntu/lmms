@@ -37,6 +37,7 @@
 #include "gui_templates.h"
 #include "GuiApplication.h"
 #include "InstrumentTrack.h"
+#include "Mixer.h"
 
 #include "embed.cpp"
 
@@ -288,7 +289,10 @@ void malletsInstrument::playNote( NotePlayHandle * _n,
 	const float freq = _n->frequency();
 	if ( _n->totalFramesPlayed() == 0 || _n->m_pluginData == NULL )
 	{
-		const float vel = _n->getVolume() / 100.0f;
+		// If newer projects, adjust velocity to within stk's limits
+		float velocityAdjust =
+			m_isOldVersionModel.value() ? 100.0 : 200.0;
+		const float vel = _n->getVolume() / velocityAdjust;
 
 		// critical section as STK is not thread-safe
 		static QMutex m;
@@ -574,8 +578,9 @@ void malletsInstrumentView::modelChanged()
 void malletsInstrumentView::changePreset()
 {
 	malletsInstrument * inst = castModel<malletsInstrument>();
+	inst->instrumentTrack()->silenceAllNotes();
 	int _preset = inst->m_presetsModel.value();
-	
+
 	if( _preset < 9 )
 	{
 		m_tubeBellWidget->hide();
@@ -593,7 +598,7 @@ void malletsInstrumentView::changePreset()
 		m_modalBarWidget->hide();
 		m_tubeBellWidget->hide();
 		m_bandedWGWidget->show();
-	}		
+	}
 }
 
 

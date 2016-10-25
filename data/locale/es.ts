@@ -457,15 +457,15 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Click here and selected values will be cut into the clipboard.  You can paste them anywhere in any pattern by clicking on the paste button.</source>
-        <translation>Haz click aquí y los valores seleccionados se-moverán al portapapeles. Puedes pegarlos en cualquier lugar de cualquier patrón haciendo click en el botón &quot;pegar&quot;.</translation>
+        <translation>Haz click aquí y los valores seleccionados se moverán al portapapeles. Puedes pegarlos en cualquier lugar de cualquier patrón haciendo click en el botón &quot;pegar&quot;.</translation>
     </message>
     <message>
         <source>Click here and selected values will be copied into the clipboard.  You can paste them anywhere in any pattern by clicking on the paste button.</source>
-        <translation>Haz click aquí y los valores seleccionados se-copiarán al portapapeles. Puedes pegarlos en cualquier lugar de cualquier patrón haciendo click en el botón &quot;pegar&quot;.</translation>
+        <translation>Haz click aquí y los valores seleccionados se copiarán al portapapeles. Puedes pegarlos en cualquier lugar de cualquier patrón haciendo click en el botón &quot;pegar&quot;.</translation>
     </message>
     <message>
         <source>Click here and the values from the clipboard will be pasted at the first visible measure.</source>
-        <translation>Haz click aquí y los valores del portapapeles se pegarán en el primer compás visible.</translation>
+        <translation>Haz click aquí para pegar el contenido del portapapeles en el primer compás visible.</translation>
     </message>
     <message>
         <source>Tension: </source>
@@ -501,14 +501,14 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Model is already connected to this pattern.</source>
-        <translation>El modelo ya se encuentra conectado a este patrón.</translation>
+        <translation>El modelo ya está conectado a este patrón.</translation>
     </message>
 </context>
 <context>
     <name>AutomationPattern</name>
     <message>
         <source>Drag a control while pressing &lt;%1&gt;</source>
-        <translation>Arrastre un control manteniendo presionado &lt;%1&gt;</translation>
+        <translation>Arrastre un control mientras presiona &lt;%1&gt;</translation>
     </message>
 </context>
 <context>
@@ -547,15 +547,15 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Flip Vertically (Visible)</source>
-        <translation>Voltar verticalmente (Visible)</translation>
+        <translation>Voltear verticalmente (Visible)</translation>
     </message>
     <message>
         <source>Flip Horizontally (Visible)</source>
-        <translation>Volter horizontalmente (Visible)</translation>
+        <translation>Voltear horizontalmente (Visible)</translation>
     </message>
     <message>
         <source>Model is already connected to this pattern.</source>
-        <translation>El modelo ya se encuentra conectado a este patrón.</translation>
+        <translation>El modelo ya está conectado a este patrón.</translation>
     </message>
 </context>
 <context>
@@ -569,27 +569,27 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     <name>BBEditor</name>
     <message>
         <source>Beat+Bassline Editor</source>
-        <translation>Editor de Ritmo+Base</translation>
+        <translation>Editor de Ritmo+Bajo</translation>
     </message>
     <message>
         <source>Play/pause current beat/bassline (Space)</source>
-        <translation>Reproducir/pausar el ritmo base actual (espacio)</translation>
+        <translation>Reproducir/pausar el ritmo/bajo actual (espacio)</translation>
     </message>
     <message>
         <source>Stop playback of current beat/bassline (Space)</source>
-        <translation>Detener la reproducción del ritmo/base actual (Espacio)</translation>
+        <translation>Detener la reproducción del ritmo/bajo actual (Espacio)</translation>
     </message>
     <message>
         <source>Click here to play the current beat/bassline.  The beat/bassline is automatically looped when its end is reached.</source>
-        <translation>Haz click aquí para reproducir el Ritmo/Base actual. El Ritmo/base se reproducirá automáticamente desde el principio cada vez que llegue al final.</translation>
+        <translation>Haz click aquí para reproducir el Ritmo/Bajo actual. El Ritmo/bajo se reproducirá automáticamente desde el principio cada vez que llegue al final.</translation>
     </message>
     <message>
         <source>Click here to stop playing of current beat/bassline.</source>
-        <translation>Haz click aquí para detener el Ritmo/Base actual.</translation>
+        <translation>Haz click aquí para detener el Ritmo/Bajo actual.</translation>
     </message>
     <message>
         <source>Add beat/bassline</source>
-        <translation>Agregar Ritmo/base</translation>
+        <translation>Agregar Ritmo/bajo</translation>
     </message>
     <message>
         <source>Add automation-track</source>
@@ -620,7 +620,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     <name>BBTCOView</name>
     <message>
         <source>Open in Beat+Bassline-Editor</source>
-        <translation>Abrir en Editor de Ritmo+Base</translation>
+        <translation>Abrir en Editor de Ritmo+Bajo</translation>
     </message>
     <message>
         <source>Reset name</source>
@@ -636,14 +636,14 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Reset color to default</source>
-        <translation>Restaurar al color por defecto</translation>
+        <translation>Restaurar el color por defecto</translation>
     </message>
 </context>
 <context>
     <name>BBTrack</name>
     <message>
         <source>Beat/Bassline %1</source>
-        <translation>Ritmo/Base %1</translation>
+        <translation>Ritmo/Bajo %1</translation>
     </message>
     <message>
         <source>Clone of %1</source>
@@ -752,7 +752,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Enable bitdepth-crushing</source>
-        <translation>Habilitar reduccion de bits de profundidad</translation>
+        <translation>Habilitar reducción de profundidad bits</translation>
     </message>
     <message>
         <source>Sample rate:</source>
@@ -790,11 +790,11 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     <name>CarlaInstrumentView</name>
     <message>
         <source>Show GUI</source>
-        <translation>Mostrar Interfaz</translation>
+        <translation>Mostrar IGU</translation>
     </message>
     <message>
         <source>Click here to show or hide the graphical user interface (GUI) of Carla.</source>
-        <translation>Haz click aquí para mostrar u ocultar la interfaz gráfica (GUI) de Carla.</translation>
+        <translation>Haz click aquí para mostrar u ocultar la interfaz gráfica de usuario (IGU) de Carla.</translation>
     </message>
 </context>
 <context>
@@ -844,11 +844,11 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>MAPPING FUNCTION</source>
-        <translation>FUNCION DE MAPEO</translation>
+        <translation>FUNCIÓN DE MAPEO</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -894,15 +894,19 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Rename controller</source>
-        <translation>Renombrar controlador</translation>
+        <translation>Renombrar el controlador</translation>
     </message>
     <message>
         <source>Enter the new name for this controller</source>
-        <translation>Ingrese un nombre nuevo para este controlador</translation>
+        <translation>Escribe un nombre nuevo para este controlador</translation>
     </message>
     <message>
-        <source>&amp;Remove this plugin</source>
-        <translation>Quita&amp;r este complemento</translation>
+        <source>&amp;Remove this controller</source>
+        <translation>Quita&amp;R este controlador</translation>
+    </message>
+    <message>
+        <source>Re&amp;name this controller</source>
+        <translation>Re&amp;nombrar este controlador</translation>
     </message>
 </context>
 <context>
@@ -976,7 +980,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Feedback</source>
-        <translation>realimentacion (feedback)</translation>
+        <translation>Realimentacion</translation>
     </message>
     <message>
         <source>Lfo Frequency</source>
@@ -988,14 +992,14 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Output gain</source>
-        <translation>ganancia de salida</translation>
+        <translation>Ganancia de salida</translation>
     </message>
 </context>
 <context>
     <name>DelayControlsDialog</name>
     <message>
         <source>Delay</source>
-        <translation>Retraso (delay)</translation>
+        <translation>Retraso</translation>
     </message>
     <message>
         <source>Lfo Amt</source>
@@ -1003,7 +1007,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Delay Time</source>
-        <translation>Tiempo de retraso (delay)</translation>
+        <translation>Tiempo de retraso</translation>
     </message>
     <message>
         <source>Regen</source>
@@ -1011,7 +1015,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Feedback Amount</source>
-        <translation>Cantidad de realimentacion (feedback)</translation>
+        <translation>Cantidad de realimentacion</translation>
     </message>
     <message>
         <source>Rate</source>
@@ -1161,7 +1165,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>RC LowPass 12dB</source>
-        <translation>RC pasoBajo 12 dB</translation>
+        <translation>RC PasoBajo 12 dB</translation>
     </message>
     <message>
         <source>RC BandPass 12dB</source>
@@ -1232,7 +1236,7 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     </message>
     <message>
         <source>Record while playing</source>
-        <translation>Grabar tocando</translation>
+        <translation>Grabar reproduciendo</translation>
     </message>
     <message>
         <source>Transport controls</source>
@@ -1285,6 +1289,10 @@ Si te interesa traducir LMMS a otros idiomas o mejorar las traducciones existent
     <message>
         <source>Name</source>
         <translation>Nombre</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Description</source>
@@ -1375,11 +1383,11 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Move &amp;up</source>
-        <translation>Mover &amp;arriba</translation>
+        <translation>Mover arriba (&amp;U)</translation>
     </message>
     <message>
         <source>Move &amp;down</source>
-        <translation>Mover a&amp;bajo</translation>
+        <translation>Mover abajo (&amp;D)</translation>
     </message>
     <message>
         <source>&amp;Remove this plugin</source>
@@ -1406,7 +1414,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Sustain</source>
-        <translation>Sostén</translation>
+        <translation>Sostenido</translation>
     </message>
     <message>
         <source>Release</source>
@@ -1449,7 +1457,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     <name>EnvelopeAndLfoView</name>
     <message>
         <source>DEL</source>
-        <translation>DEL</translation>
+        <translation>RETR</translation>
     </message>
     <message>
         <source>Predelay:</source>
@@ -1493,7 +1501,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Use this knob for setting decay-time of the current envelope. The bigger this value the longer the envelope needs to decrease from attack-level to sustain-level. Choose a small value for instruments like pianos.</source>
-        <translation>Usa este control para configurar el tiempo de caída de la envolvente actual. A mayor valor mayor tiempo necesitará la envolvente para pasar del nivel de ataque a sostenido. Escoje un valor pequeño para instrumentos como pianos.</translation>
+        <translation>Usa este control para configurar el tiempo de caída de la envolvente actual. A mayor valor mayor tiempo necesitará la envolvente para pasar del nivel de ataque al de sostenido. Escoje un valor pequeño para instrumentos como pianos.</translation>
     </message>
     <message>
         <source>SUST</source>
@@ -1501,11 +1509,11 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Sustain:</source>
-        <translation>Sostén:</translation>
+        <translation>Sostenido:</translation>
     </message>
     <message>
         <source>Use this knob for setting sustain-level of the current envelope. The bigger this value the higher the level on which the envelope stays before going down to zero.</source>
-        <translation>Usa este control para configurar el nivel de sustain de la envolvente actual. A mayor valor mayor tiempo tardará la envolvente hasta llegar a cero.</translation>
+        <translation>Usa este control para configurar el nivel de sostenido de la envolvente actual. Mientras mayor sea este valor, más altor será el nivel al que se mantendrá la envolvente antes de disiparse.</translation>
     </message>
     <message>
         <source>REL</source>
@@ -1517,7 +1525,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Use this knob for setting release-time of the current envelope. The bigger this value the longer the envelope needs to decrease from sustain-level to zero. Choose a big value for soft instruments like strings.</source>
-        <translation>Usa este control para configurar el intervalo de Disipación de la envolvente actual. A mayor valor, la envolvente necesitará más tiempo para pasar del nivel de sustain a cero. Escoje un valor grande para instrumentos suaves como cuerdas.</translation>
+        <translation>Usa este control para configurar el intervalo de Disipación de la envolvente actual. A mayor valor, la envolvente necesitará más tiempo para pasar del nivel de sostenido a cero. Escoje un valor grande para instrumentos suaves como cuerdas.</translation>
     </message>
     <message>
         <source>AMT</source>
@@ -1529,7 +1537,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Use this knob for setting modulation amount of the current envelope. The bigger this value the more the according size (e.g. volume or cutoff-frequency) will be influenced by this envelope.</source>
-        <translation>Usa esta perilla para configurar la cantidad de modulación de la envolvente actual.  Mientras más alto sea este valor, mayor será la infuencia de esta envolvente sobre el tamaño correspondiente (por ej. volumen o frecuencia de corte).</translation>
+        <translation>Usa esta perilla para configurar la cantidad de modulación de la envolvente actual.  Mientras más alto sea este valor, mayor será la infuencia de la envolvente sobre,  por ej., el volumen o la frecuencia de corte.</translation>
     </message>
     <message>
         <source>LFO predelay:</source>
@@ -1537,7 +1545,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Use this knob for setting predelay-time of the current LFO. The bigger this value the the time until the LFO starts to oscillate.</source>
-        <translation>Usa este control para configurar el pre-retraso del LFO actual. A mayor valor, mayor tiempo hasta que el LFO comience a oscilar.</translation>
+        <translation>Usa este control para configurar el pre-retraso del LFO actual. A mayor valor, mayor el tiempo hasta que el LFO comience a oscilar.</translation>
     </message>
     <message>
         <source>LFO- attack:</source>
@@ -1561,7 +1569,7 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Use this knob for setting modulation amount of the current LFO. The bigger this value the more the selected size (e.g. volume or cutoff-frequency) will be influenced by this LFO.</source>
-        <translation>Usa esta perilla para configurar la cantidad de modulación de este LFO. A mayores valores, mayor será la infuencia que ejercerá este oscilador (LFO) sobre el tamaño seleccionado (ej.: volumen o frecuencia de muestreo).</translation>
+        <translation>Usa esta perilla para configurar la cantidad de modulación de este LFO. A mayores valores, mayor será la infuencia que ejercerá este oscilador (LFO) sobre la propiedad seleccionada (por ej.: el volumen o la frecuencia de corte).</translation>
     </message>
     <message>
         <source>Click here for a sine-wave.</source>
@@ -1573,11 +1581,11 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Click here for a saw-wave for current.</source>
-        <translation>Haz click aquí para una onda de sierra.</translation>
+        <translation>Haz click aquí para seleccionar una onda de sierra.</translation>
     </message>
     <message>
         <source>Click here for a square-wave.</source>
-        <translation>Haz click aquí para elegir una onda cuadrada.</translation>
+        <translation>Haz click aquí para seleccionar una onda cuadrada.</translation>
     </message>
     <message>
         <source>Click here for a user-defined wave. Afterwards, drag an according sample-file onto the LFO graph.</source>
@@ -1621,18 +1629,18 @@ Haciendo click derecho accederás a un menú contextual en el que podrás cambia
     </message>
     <message>
         <source>Click here for random wave.</source>
-        <translation>Haz click aquí para obtener una onda aleatoria.</translation>
+        <translation>Haz click aquí para seleccionar una onda aleatoria.</translation>
     </message>
 </context>
 <context>
     <name>EqControls</name>
     <message>
         <source>Input gain</source>
-        <translation>ganancia de entrada</translation>
+        <translation>Ganancia de entrada</translation>
     </message>
     <message>
         <source>Output gain</source>
-        <translation>ganancia de salida</translation>
+        <translation>Ganancia de salida</translation>
     </message>
     <message>
         <source>Low shelf gain</source>
@@ -2073,7 +2081,7 @@ Please make sure you have write-permission to the file and the directory contain
     <name>FileBrowser</name>
     <message>
         <source>Browser</source>
-        <translation>Navegador</translation>
+        <translation>Explorador</translation>
     </message>
 </context>
 <context>
@@ -2084,11 +2092,11 @@ Please make sure you have write-permission to the file and the directory contain
     </message>
     <message>
         <source>Open in new instrument-track/B+B Editor</source>
-        <translation>Abrir en la nueva pista de instrumento/Editor de Ritmo+Base</translation>
+        <translation>Abrir en la nueva pista de instrumento/Editor de R+B</translation>
     </message>
     <message>
         <source>Loading sample</source>
-        <translation>Cargar muestra</translation>
+        <translation>Cargando muestra</translation>
     </message>
     <message>
         <source>Please wait, loading sample for preview...</source>
@@ -2100,7 +2108,7 @@ Please make sure you have write-permission to the file and the directory contain
     </message>
     <message>
         <source>Open in new instrument-track/Song Editor</source>
-        <translation>Abrir en nueva pista de instrumento/Editor de canción</translation>
+        <translation>Abrir en una nueva pista de instrumento/Editor de canción</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2374,7 +2382,7 @@ Puedes quitar y mover los canales FX a través del menú contextual. Accede a es
     </message>
     <message>
         <source>Preparing beat/bassline editor</source>
-        <translation>Preparando editor de ritmo/base</translation>
+        <translation>Preparando editor de ritmo/bajo</translation>
     </message>
     <message>
         <source>Preparing piano roll</source>
@@ -3509,10 +3517,6 @@ Puedes quitar y mover los canales FX a través del menú contextual. Accede a es
         <translation>Usa esta perilla para definir la velocidad del LFO. A mayor valor, más rápida la velocidad de oscilación del LFO y más rápido el efecto.</translation>
     </message>
     <message>
-        <source>AMT</source>
-        <translation>CANT</translation>
-    </message>
-    <message>
         <source>Modulation amount:</source>
         <translation>Cantidad de modulación:</translation>
     </message>
@@ -3569,6 +3573,10 @@ Haz doble click para seleccionar un archivo.</translation>
     <message>
         <source>Click here for a moog saw-wave.</source>
         <translation>Haz click aquí para elegir una onda moog.</translation>
+    </message>
+    <message>
+        <source>AMNT</source>
+        <translation>CANT</translation>
     </message>
 </context>
 <context>
@@ -3691,11 +3699,11 @@ Please make sure you have write-access to the file and try again.</source>
     </message>
     <message>
         <source>Beat+Bassline Editor</source>
-        <translation>Editor de Ritmo+Base</translation>
+        <translation>Editor de Ritmo+Bajo</translation>
     </message>
     <message>
         <source>By pressing this button, you can show or hide the Beat+Bassline Editor. The Beat+Bassline Editor is needed for creating beats, and for opening, adding, and removing channels, and for cutting, copying and pasting beat and bassline-patterns, and for other things like that.</source>
-        <translation>Presionando este botón puedes mostrar u ocultar el Editor de Ritmo+Base. El Editor de Ritmo+Base es necesario para crear ritmos, y para abrir, agregar y quitar canales, y para copiar, cortar y pegar patrones de ritmo y base, y otras cosas por el estilo.</translation>
+        <translation>Presionando este botón puedes mostrar u ocultar el Editor de Ritmo+Bajo. El Editor de Ritmo+Bajo es necesario para crear ritmos, y para abrir, agregar y quitar canales, y para copiar, cortar y pegar patrones de ritmo y bajo, y otras cosas por el estilo.</translation>
     </message>
     <message>
         <source>Piano Roll</source>
@@ -3909,11 +3917,11 @@ Por favor visite http://lmms.sf.net/wiki por documentación de LMMS.</translatio
     </message>
     <message>
         <source>Export &amp;MIDI...</source>
-        <translation>Exportar %MIDI...</translation>
+        <translation>Exportar &amp;MIDI...</translation>
     </message>
     <message>
         <source>&amp;View</source>
-        <translation>%Ver</translation>
+        <translation>&amp;Ver</translation>
     </message>
     <message>
         <source>Toggle metronome</source>
@@ -3925,7 +3933,7 @@ Por favor visite http://lmms.sf.net/wiki por documentación de LMMS.</translatio
     </message>
     <message>
         <source>Show/hide Beat+Bassline Editor</source>
-        <translation>Mostrar/ocultar Editor de Ritmo/Base</translation>
+        <translation>Mostrar/ocultar el Editor de Ritmo+Bajo</translation>
     </message>
     <message>
         <source>Show/hide Piano-Roll</source>
@@ -5594,6 +5602,10 @@ PM significa &apos;modulación de fase&apos;. La fase el oscilador 3 es modulada
         <source>Piano-Roll - no pattern</source>
         <translation>Piano-Roll - sin patrón</translation>
     </message>
+    <message>
+        <source>Quantize</source>
+        <translation>Cuantizar</translation>
+    </message>
 </context>
 <context>
     <name>PianoView</name>
@@ -5635,7 +5647,7 @@ Razón: &quot;%2&quot;</translation>
     </message>
     <message>
         <source>Drag an instrument into either the Song-Editor, the Beat+Bassline Editor or into an existing instrument track.</source>
-        <translation>Arrastra un instrumento al Editor de Canción, al Editor de Ritmo+Base o sobre una pista de instrumento existente.</translation>
+        <translation>Arrastra un instrumento al Editor de Canción, al Editor de Ritmo+Bajo o sobre una pista de instrumento existente.</translation>
     </message>
 </context>
 <context>
@@ -6251,10 +6263,6 @@ Recuerda también guardar tu proyecto manualmente.</translation>
         <translation>secuencias MIDI</translation>
     </message>
     <message>
-        <source>FL Studio projects</source>
-        <translation>Proyectos de FL-Studio</translation>
-    </message>
-    <message>
         <source>Hydrogen projects</source>
         <translation>Proyectos de Hydrogen</translation>
     </message>
@@ -6367,20 +6375,20 @@ Recuerda también guardar tu proyecto manualmente.</translation>
         <translation>No se pudo abrir el archivo %1 para escritura. Probablemente no tienes permisos de escritura sobre este archivo. Asegúrate de tener acceso de escritura a este archivo e inténtalo nuevamente.</translation>
     </message>
     <message>
-        <source>Project Version Mismatch</source>
-        <translation>La versión del proyecto no concuerda</translation>
-    </message>
-    <message>
-        <source>This %1 was created with LMMS version %2, but version %3 is installed</source>
-        <translation>Este %1 ha sido creado usando LMMS versión %2, pero se encuentra instalada la versión %3.</translation>
-    </message>
-    <message>
         <source>template</source>
         <translation>plantilla</translation>
     </message>
     <message>
         <source>project</source>
         <translation>proyecto</translation>
+    </message>
+    <message>
+        <source>Version difference</source>
+        <translation>Diferencia de versiones</translation>
+    </message>
+    <message>
+        <source>This %1 was created with LMMS %2.</source>
+        <translation>Este %1 fue creado con LMMS %2.</translation>
     </message>
 </context>
 <context>
@@ -6407,7 +6415,7 @@ Recuerda también guardar tu proyecto manualmente.</translation>
     </message>
     <message>
         <source>Add beat/bassline</source>
-        <translation>Agregar Ritmo/base</translation>
+        <translation>Agregar Ritmo/bajo</translation>
     </message>
     <message>
         <source>Add sample-track</source>
@@ -6474,6 +6482,25 @@ Recuerda también guardar tu proyecto manualmente.</translation>
     <message>
         <source>Channel mode</source>
         <translation>Modo del canal</translation>
+    </message>
+</context>
+<context>
+    <name>SubWindow</name>
+    <message>
+        <source>Close</source>
+        <translation>Cerrar</translation>
+    </message>
+    <message>
+        <source>Maximize</source>
+        <translation>Maximizar</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Minimizar</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>Restaurar</translation>
     </message>
 </context>
 <context>
@@ -6672,10 +6699,6 @@ Please make sure you have read-permission to the file and the directory containi
     <message>
         <source>Importing MIDI-file...</source>
         <translation>Importando archivo MIDI...</translation>
-    </message>
-    <message>
-        <source>Importing FLP-file...</source>
-        <translation>Importando archivo FLP...</translation>
     </message>
 </context>
 <context>
@@ -9041,10 +9064,6 @@ Haciendo doble click en cualquier complementos mostrará la información de sus 
     <message>
         <source>List installed LADSPA plugins</source>
         <translation>Listar los complementos LADSPA instalados</translation>
-    </message>
-    <message>
-        <source>Filter for importing FL Studio projects into LMMS</source>
-        <translation>Filtro para importar proyectos de FL-Studio a LMMS</translation>
     </message>
     <message>
         <source>GUS-compatible patch instrument</source>

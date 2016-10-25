@@ -614,6 +614,10 @@ If you&apos;re interested in translating LMMS in another language or want to imp
         <source>Clone Steps</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Add sample-track</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BBTCOView</name>
@@ -900,7 +904,15 @@ If you&apos;re interested in translating LMMS in another language or want to imp
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Remove this plugin</source>
+        <source>&amp;Remove this controller</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Re&amp;name this controller</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>LFO</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1283,6 +1295,10 @@ If you&apos;re interested in translating LMMS in another language or want to imp
     </message>
     <message>
         <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2131,31 +2147,7 @@ Please make sure you have write-permission to the file and the directory contain
 <context>
     <name>FlangerControlsDialog</name>
     <message>
-        <source>Delay</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delay Time:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Lfo Hz</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Lfo:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Amt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Amt:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Regen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2163,11 +2155,39 @@ Please make sure you have write-permission to the file and the directory contain
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Noise</source>
+        <source>White Noise Amount:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>White Noise Amount:</source>
+        <source>DELAY</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>RATE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AMNT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FDBK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>NOISE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invert</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2221,14 +2241,6 @@ You can remove and move FX channels in the context menu, which is accessed by ri
 </context>
 <context>
     <name>FxMixerView</name>
-    <message>
-        <source>Rename FX channel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enter the new name for this FX channel</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>FX-Mixer</source>
         <translation type="unfinished"></translation>
@@ -2428,6 +2440,14 @@ You can remove and move FX channels in the context menu, which is accessed by ri
         <source>Down and up</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Skip rate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Miss rate</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>InstrumentFunctionArpeggioView</name>
@@ -2497,6 +2517,30 @@ You can remove and move FX channels in the context menu, which is accessed by ri
     </message>
     <message>
         <source>Mode:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SKIP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Skip rate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The skip function will make the arpeggiator pause one step randomly. From its start in full counter clockwise position and no effect it will gradually progress to full amnesia at maximum setting.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MISS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Miss rate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The miss function will make the arpeggiator miss the intended note.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2880,6 +2924,14 @@ You can remove and move FX channels in the context menu, which is accessed by ri
     </message>
     <message>
         <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Phrygian dominant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Persian</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3490,10 +3542,6 @@ You can remove and move FX channels in the context menu, which is accessed by ri
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>AMT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Modulation amount:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3548,6 +3596,10 @@ Double click to pick a file.</source>
     </message>
     <message>
         <source>Click here for a moog saw-wave.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AMNT</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3848,18 +3900,6 @@ Please visit http://lmms.sf.net/wiki for documentation on LMMS.</source>
     </message>
     <message>
         <source>Launch a default session and delete the restored files. This is not reversible.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Quit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Shut down LMMS with no further action.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5305,11 +5345,11 @@ PM means phase modulation: Oscillator 3&apos;s phase is modulated by oscillator 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>TRES</source>
+        <source>Treshold:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Treshold:</source>
+        <source>TRSH</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6010,10 +6050,6 @@ Reason: &quot;%2&quot;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>FL Studio installation directory</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>STK rawwave directory</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6092,10 +6128,6 @@ Latency: %2 ms</source>
     </message>
     <message>
         <source>Choose artwork-theme directory</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Choose FL Studio installation directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6215,10 +6247,6 @@ Remember to also save your project manually.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>FL Studio projects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Hydrogen projects</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6331,19 +6359,19 @@ Remember to also save your project manually.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Project Version Mismatch</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This %1 was created with LMMS version %2, but version %3 is installed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Version difference</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This %1 was created with LMMS %2.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6448,10 +6476,6 @@ Remember to also save your project manually.</source>
     </message>
     <message>
         <source>Maximize</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Minimize</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6652,10 +6676,6 @@ Please make sure you have read-permission to the file and the directory containi
     </message>
     <message>
         <source>Importing MIDI-file...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Importing FLP-file...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -9009,10 +9029,6 @@ Double clicking any of the plugins will bring up information on the ports.</sour
     </message>
     <message>
         <source>List installed LADSPA plugins</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Filter for importing FL Studio projects into LMMS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

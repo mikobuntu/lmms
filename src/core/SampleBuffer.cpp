@@ -59,6 +59,7 @@
 #include "endian_handling.h"
 #include "Engine.h"
 #include "interpolation.h"
+#include "Mixer.h"
 #include "templates.h"
 
 #include "FileDialog.h"
@@ -150,9 +151,7 @@ SampleBuffer::SampleBuffer( const f_cnt_t _frames ) :
 
 SampleBuffer::~SampleBuffer()
 {
-	if( m_origData != NULL )
-		MM_FREE( m_origData );
-
+	MM_FREE( m_origData );
 	MM_FREE( m_data );
 }
 
@@ -169,6 +168,7 @@ void SampleBuffer::update( bool _keep_settings )
 	const bool lock = ( m_data != NULL );
 	if( lock )
 	{
+		Engine::mixer()->requestChangeInModel();
 		m_varLock.lockForWrite();
 		MM_FREE( m_data );
 	}
@@ -269,6 +269,7 @@ void SampleBuffer::update( bool _keep_settings )
 	if( lock )
 	{
 		m_varLock.unlock();
+		Engine::mixer()->doneChangeInModel();
 	}
 
 	emit sampleUpdated();
@@ -353,7 +354,7 @@ void SampleBuffer::normalizeSampleRate( const sample_rate_t _src_sr,
 	// do samplerate-conversion to our default-samplerate
 	if( _src_sr != Engine::mixer()->baseSampleRate() )
 	{
-		SampleBuffer * resampled = resample( this, _src_sr,
+		SampleBuffer * resampled = resample( _src_sr,
 					Engine::mixer()->baseSampleRate() );
 		MM_FREE( m_data );
 		m_frames = resampled->frames();
@@ -381,6 +382,7 @@ f_cnt_t SampleBuffer::decodeSampleSF( const char * _f,
 {
 	SNDFILE * snd_file;
 	SF_INFO sf_info;
+	sf_info.format = 0;
 	f_cnt_t frames = 0;
 	bool sf_rr = false;
 
@@ -596,8 +598,6 @@ bool SampleBuffer::play( sampleFrame * _ab, handleState * _state,
 					const float _freq,
 					const LoopMode _loopmode )
 {
-	QReadLocker readLocker(&m_varLock);
-
 	f_cnt_t startFrame = m_startFrame;
 	f_cnt_t endFrame = m_endFrame;
 	f_cnt_t loopStartFrame = m_loopStartFrame;
@@ -911,27 +911,22 @@ void SampleBuffer::visualize( QPainter & _p, const QRect & _dr,
 	const float y_space = h*0.5f;
 	const int nb_frames = focus_on_range ? _to_frame - _from_frame : m_frames;
 
-	if( nb_frames < 60000 )
-	{
-		_p.setRenderHint( QPainter::Antialiasing );
-		QColor c = _p.pen().color();
-		_p.setPen( QPen( c, 0.7 ) );
-	}
 	const int fpp = tLimit<int>( nb_frames / w, 1, 20 );
-	QPoint * l = new QPoint[nb_frames / fpp + 1];
-	QPoint * r = new QPoint[nb_frames / fpp + 1];
+	QPointF * l = new QPointF[nb_frames / fpp + 1];
+	QPointF * r = new QPointF[nb_frames / fpp + 1];
 	int n = 0;
 	const int xb = _dr.x();
 	const int first = focus_on_range ? _from_frame : 0;
 	const int last = focus_on_range ? _to_frame : m_frames;
 	for( int frame = first; frame < last; frame += fpp )
 	{
-		l[n] = QPoint( xb + ( (frame - first) * double( w ) / nb_frames ),
-			(int)( yb - ( m_data[frame][0] * y_space * m_amplification ) ) );
-		r[n] = QPoint( xb + ( (frame - first) * double( w ) / nb_frames ),
-			(int)( yb - ( m_data[frame][1] * y_space * m_amplification ) ) );
+		l[n] = QPointF( xb + ( (frame - first) * double( w ) / nb_frames ),
+			( yb - ( m_data[frame][0] * y_space * m_amplification ) ) );
+		r[n] = QPointF( xb + ( (frame - first) * double( w ) / nb_frames ),
+			( yb - ( m_data[frame][1] * y_space * m_amplification ) ) );
 		++n;
 	}
+	_p.setRenderHint( QPainter::Antialiasing );
 	_p.drawPolyline( l, nb_frames / fpp );
 	_p.drawPolyline( r, nb_frames / fpp );
 	delete[] l;
@@ -1146,12 +1141,12 @@ QString & SampleBuffer::toBase64( QString & _dst ) const
 
 
 
-SampleBuffer * SampleBuffer::resample( sampleFrame * _data,
-						const f_cnt_t _frames,
-						const sample_rate_t _src_sr,
+SampleBuffer * SampleBuffer::resample( const sample_rate_t _src_sr,
 						const sample_rate_t _dst_sr )
 {
-	const f_cnt_t dst_frames = static_cast<f_cnt_t>( _frames /
+	sampleFrame * data = m_data;
+	const f_cnt_t frames = m_frames;
+	const f_cnt_t dst_frames = static_cast<f_cnt_t>( frames /
 					(float) _src_sr * (float) _dst_sr );
 	SampleBuffer * dst_sb = new SampleBuffer( dst_frames );
 	sampleFrame * dst_buf = dst_sb->m_origData;
@@ -1164,9 +1159,9 @@ SampleBuffer * SampleBuffer::resample( sampleFrame * _data,
 	{
 		SRC_DATA src_data;
 		src_data.end_of_input = 1;
-		src_data.data_in = _data[0];
+		src_data.data_in = data[0];
 		src_data.data_out = dst_buf[0];
-		src_data.input_frames = _frames;
+		src_data.input_frames = frames;
 		src_data.output_frames = dst_frames;
 		src_data.src_ratio = (double) _dst_sr / _src_sr;
 		if( ( error = src_process( state, &src_data ) ) )
@@ -1354,7 +1349,6 @@ void SampleBuffer::loadFromBase64( const QString & _data )
 
 void SampleBuffer::setStartFrame( const f_cnt_t _s )
 {
-	QWriteLocker writeLocker(&m_varLock);
 	m_startFrame = _s;
 }
 
@@ -1363,7 +1357,6 @@ void SampleBuffer::setStartFrame( const f_cnt_t _s )
 
 void SampleBuffer::setEndFrame( const f_cnt_t _e )
 {
-	QWriteLocker writeLocker(&m_varLock);
 	m_endFrame = _e;
 }
 
